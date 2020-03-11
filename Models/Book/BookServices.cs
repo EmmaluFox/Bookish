@@ -1,5 +1,7 @@
-﻿using System.Data;
+﻿using System.Collections.Generic;
+using System.Data;
 using System.Threading;
+using System.Data.SqlClient;
 
 namespace Bookish.Models.Book
 
@@ -17,9 +19,12 @@ namespace Bookish.Models.Book
             public int OriginalPublicationYear { get; set; }
 
         }
-        public static void GetBook()
+        public static IEnumerable<Book> GetBook()
         {
-            
+            string serverConnection = "Server=localhost;Port=3306;Database=bookishdb;Uid=root;Pwd=Astrid2014;";
+            using SqlConnection connection = new SqlConnection(serverConnection);
+            var books = connection.Query<Book>("SELECT * FROM Book");
+            return books;
         }
 
     }
