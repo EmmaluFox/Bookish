@@ -16,7 +16,10 @@ namespace Bookish
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
-            BookServices.GetBook();
+            BookServices books = new BookServices();
+            {
+                
+            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

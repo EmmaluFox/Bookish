@@ -19,9 +19,14 @@ namespace Bookish.Models.Book
             public int OriginalPublicationYear { get; set; }
 
         }
-        public static IEnumerable<Book> GetBook()
+        public IEnumerable<Book> GetBook()
         {
-            string serverConnection = "Server=localhost;Port=3306;Database=bookishdb;Uid=root;Pwd=Astrid2014;";
+            var server = "127.0.0.1";
+            var database = "bookishdb";
+            var uid = "EmmFox";
+            var password = "Astrid2014";
+            string serverConnection = "Server=" + server + ";" + "Database=" + 
+                                      database + ";" + "Uid=" + uid + ";" + "Pwd=" + password + ";";
             using SqlConnection connection = new SqlConnection(serverConnection);
             var books = connection.Query<Book>("SELECT * FROM Book");
             return books;
