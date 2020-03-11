@@ -8,11 +8,26 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Bookish.csproj" t="IncludeRecursive" />
       <e p="Bookish.sln" t="IncludeFlat" />
+      <e p="BookishDB.sql" t="Include" />
+      <e p="Books.xlsx" t="Include" />
       <e p="Controllers" t="Include">
+        <e p="Author" t="Include">
+          <e p="AuthorController.cs" t="Include" />
+        </e>
+        <e p="Book" t="Include">
+          <e p="BookController.cs" t="Include" />
+        </e>
+        <e p="CopyController.cs" t="Include" />
         <e p="HomeController.cs" t="Include" />
+        <e p="UserController.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
+        <e p="AuthorModel.cs" t="Include" />
+        <e p="BookModel.cs" t="Include" />
+        <e p="CopyModel.cs" t="Include" />
         <e p="ErrorViewModel.cs" t="Include" />
+        <e p="HomeModel.cs" t="Include" />
+        <e p="UserModel.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
@@ -103,6 +118,7 @@
           </e>
         </e>
       </e>
+      <e p="~$Books.xlsx" t="Include" />
     </e>
     <e p="C:\Users\EmmFox\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\EmmFox\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Bookish.-452252315.00" t="ExcludeRecursive" />
