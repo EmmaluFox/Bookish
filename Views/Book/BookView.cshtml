@@ -1,4 +1,5 @@
 ﻿@using Bookish.Models.Book
+@using Bookish.Models.Copy
 @using Dapper
 @model BookModel
 
@@ -9,17 +10,19 @@
 <h2>Books</h2>
     @{
         <section class="book_list_container">
-            <table class="book_table"><tr><th>ID</th><th>Cover Image</th><th>Title</th><th>Author</th><th>Published</th><th>ISBN</th></tr>
+            <table class="book_table"><tr><th>ID</th><th>Cover Image</th><th>Title</th><th>Author</th><th>Published</th><th>ISBN</th><th>Total Copies</th></tr>
                     @{
                         BookServices getBookList = new BookServices();
                         IEnumerable<BookServices.Book> bookList = getBookList.GetBook();
                         foreach (var book in bookList)
                        {
                            <tr><td>@book.Id</td>
-                                <td><img src="@book.ImageUrl" alt="@book.Title"/></td><td>@book.Title</td>
-                                <td>@book.FirstNames @book.LastName</td>
-                                <td>@book.OriginalPublicationYear</td>
-                                <td>@book.Isbn</td></tr>
+                               <td><img src="@book.ImageUrl" alt="@book.Title"/></td>
+                               <td>@book.Title</td>
+                               <td>@book.FirstNames @book.LastName</td>
+                               <td>@book.OriginalPublicationYear</td>
+                               <td>@book.Isbn</td>
+                               <td>@book.TotalCopies</td></tr>
                        }
                         
                     }

@@ -3,6 +3,7 @@ using System.Data;
 using System.Threading;
 using System.Data.SqlClient;
 using Bookish.Models.Author.Bookish.Models.Author;
+using Bookish.Models.Copy;
 using MySql.Data.MySqlClient;
 
 namespace Bookish.Models.Book
@@ -22,6 +23,7 @@ namespace Bookish.Models.Book
             public string ImageUrl { get; set; }
             public string FirstNames { get; set; }
             public string LastName { get; set; }
+            public int TotalCopies { get; set; }
 
         }
         public IEnumerable<Book> GetBook()
@@ -33,7 +35,24 @@ namespace Bookish.Models.Book
             string serverConnection = "Server=" + server + ";" + "Database=" + 
                                       database + ";" + "Uid=" + uid + ";" + "Pwd=" + password + ";";
             using MySqlConnection connection = new MySqlConnection(serverConnection);
-            var books = connection.Query<Book>("SELECT * FROM Book LEFT JOIN Author ON Book.author_id = Author.id UNION SELECT * FROM Book RIGHT JOIN Author ON Book.author_id = Author.id");
+            var books = connection.Query<Book>
+                ("SELECT * FROM Book LEFT JOIN Author ON Book.author_id = Author.id UNION SELECT * FROM Book RIGHT JOIN Author ON Book.author_id = Author.id UNION SELECT * FROM Book RIGHT JOIN Author ON Book.author_id = Author.id");
+            foreach (var book in books)
+            {
+                CopyServices getCopies = new CopyServices();
+                IEnumerable<CopyServices.Copy> copies = getCopies.GetCopy();
+                int copyCount = 0;
+                foreach (var copy in copies)
+                {
+                    if (copy.BookId == book.Id)
+                    {
+                        copyCount++;
+                    }
+                }
+
+                book.TotalCopies = copyCount;
+
+            }
             return books;
         }
         
