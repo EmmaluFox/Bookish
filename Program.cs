@@ -17,7 +17,6 @@ namespace Bookish
         {
             CreateHostBuilder(args).Build().Run();
             {
-                
             }
         }
 
