@@ -128,6 +128,8 @@
         </e>
       </e>
     </e>
+    <e p="C:\Users\EmmFox\.Rider2019.3\config\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\EmmFox\.Rider2019.3\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\EmmFox\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\EmmFox\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Bookish.-452252315.00" t="ExcludeRecursive" />
   </component>
