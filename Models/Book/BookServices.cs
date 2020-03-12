@@ -18,6 +18,7 @@ namespace Bookish.Models.Book
             public string Title { get; set; }
             public string Isbn { get; set; }
             public int OriginalPublicationYear { get; set; }
+            public string ImageUrl { get; set; }
 
         }
         public IEnumerable<Book> GetBook()
