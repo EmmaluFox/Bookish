@@ -9,8 +9,7 @@
 <h2>Books</h2>
     @{
         <section class="book_list_container">
-                Books
-                <table class="book_table"><tr><th>ID</th><th>Cover Image</th><th>Title</th><th>Author</th><th>Published</th><th>ISBN</th></tr>
+            <table class="book_table"><tr><th>ID</th><th>Cover Image</th><th>Title</th><th>Author</th><th>Published</th><th>ISBN</th></tr>
                     @{
                         BookServices getBookList = new BookServices();
                         IEnumerable<BookServices.Book> bookList = getBookList.GetBook();
