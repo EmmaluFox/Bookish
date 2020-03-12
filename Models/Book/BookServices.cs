@@ -41,7 +41,7 @@ namespace Bookish.Models.Book
             {
                 CopyServices getCopies = new CopyServices();
                 IEnumerable<CopyServices.Copy> copies = getCopies.GetCopy();
-                int copyCount = 0;
+                int copyCount = 1;
                 foreach (var copy in copies)
                 {
                     if (copy.BookId == book.Id)
