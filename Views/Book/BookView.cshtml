@@ -1,0 +1,15 @@
+﻿@using Bookish.Models.Book
+@model BookModel
+@{
+    Layout = "_Layout";
+}
+<h2>Books</h2>
+    @{
+        <section class="book_list_container">
+                Books
+                <table class="book_table">@BookModel.BookTable();</table>
+                </section>
+    }
+
+
+

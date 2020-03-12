@@ -53,7 +53,7 @@
         <e p="_ViewImports.cshtml" t="Include" />
         <e p="_ViewStart.cshtml" t="Include" />
         <e p="Book" t="Include">
-          <e p="BookView.cs" t="Include" />
+          <e p="BookView.cshtml" t="Include" />
         </e>
         <e p="Home" t="Include">
           <e p="Index.cshtml" t="Include" />
