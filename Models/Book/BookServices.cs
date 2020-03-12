@@ -2,6 +2,7 @@
 using System.Data;
 using System.Threading;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace Bookish.Models.Book
 
@@ -21,13 +22,13 @@ namespace Bookish.Models.Book
         }
         public IEnumerable<Book> GetBook()
         {
-            var server = "127.0.0.1";
+            var server = "localhost";
             var database = "bookishdb";
             var uid = "EmmFox";
             var password = "Astrid2014";
             string serverConnection = "Server=" + server + ";" + "Database=" + 
                                       database + ";" + "Uid=" + uid + ";" + "Pwd=" + password + ";";
-            using SqlConnection connection = new SqlConnection(serverConnection);
+            using MySqlConnection connection = new MySqlConnection(serverConnection);
             var books = connection.Query<Book>("SELECT * FROM Book");
             return books;
         }
