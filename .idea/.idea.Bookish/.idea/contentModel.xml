@@ -44,6 +44,7 @@
         </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />
+      <e p="Pages" t="Include" />
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
         <e p="launchSettings.json" t="Include" />
@@ -52,6 +53,9 @@
       <e p="Views" t="Include">
         <e p="_ViewImports.cshtml" t="Include" />
         <e p="_ViewStart.cshtml" t="Include" />
+        <e p="Author" t="Include">
+          <e p="AuthorView.cshtml" t="Include" />
+        </e>
         <e p="Book" t="Include">
           <e p="BookView.cshtml" t="Include" />
         </e>

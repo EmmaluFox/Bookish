@@ -1,0 +1,28 @@
+﻿@using Bookish.Models.Author.Bookish.Models.Author
+@using Dapper
+@model Bookish.Models.Author.AuthorModel
+
+@{
+    Layout = "_Layout";
+    DefaultTypeMap.MatchNamesWithUnderscores = true;
+}
+<h2>Author</h2>
+@{
+    <section class="author_container">
+        <table class="book_table"><tr><th>ID</th><th>First Names</th><th>Last Name</th></tr>
+            @{
+                AuthorServices getAuthorList = new AuthorServices();
+                IEnumerable<AuthorServices.Author> authorList = getAuthorList.GetAuthor();
+                foreach (var author in authorList)
+                {
+                    <tr><td>@author.Id</td>
+                        <td>@author.FirstNames</td>
+                        <td>@author.LastName</td></tr>
+                }
+                        
+            }
+        </table>
+    </section>
+}
+
+
