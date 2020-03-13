@@ -9,25 +9,35 @@
 
     <h1>New User</h1>
 
-    <form asp-controller="User" asp-action="CreateUser" method="post">
-            <label asp-for="FirstName">First Name:</label><br>
-            <input asp-for="FirstName"/><br/>
-            <span asp-validation-for="FirstName"></span>
+        <form asp-controller="User" asp-action="CreateUser" method="post">
+            <figure class="formItem">
+                <label asp-for="FirstName">First Name:</label><br>
+                    <input asp-for="FirstName"/><br/>
+                    <span asp-validation-for="FirstName"></span>
+            </figure>
             
-            <label asp-for="LastName"></label>
-            <input asp-for="LastName"/>
-            <span asp-validation-for="LastName"></span>
+            <figure class="formItem">
+                <label asp-for="LastName"></label>
+                <input asp-for="LastName"/>
+                <span asp-validation-for="LastName"></span>
+            </figure>
             
-            <label asp-for="Email"></label>
-            <input asp-for="Email"/>
-            <span asp-validation-for="Email"></span>
+            <figure  class="formItem">
+                <label asp-for="Email"></label>
+                <input asp-for="Email"/>
+                <span asp-validation-for="Email"></span>
+            </figure>
             
-            <label asp-for="ImageUrl"></label>
-            <input asp-for="ImageUrl"/>
-            <span asp-validation-for="ImageUrl"></span>
+            <figure  class="formItem">
+                <label asp-for="ImageUrl"></label>
+                <input asp-for="ImageUrl"/>
+                <span asp-validation-for="ImageUrl"></span>
+            </figure>
             
-            <button type="submit">Submit</button>
+            <figure  class="formItem">
+                <button type="submit">Submit</button>
+            </figure>
             
-    </form>
+        </form>
 
 

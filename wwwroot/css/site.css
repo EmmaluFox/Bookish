@@ -5,8 +5,14 @@ img {
   min-width: unset;
   max-width: unset;
 }
+section {
+  border-style: ridge;
+  border-color: #17a2b8;
+  border-width: 3px;
+  width: 90vw;
+}
 
-.profileImage {
+.profile-image {
   min-width: 90px;
   max-width: 90px;
 }
