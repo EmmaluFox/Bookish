@@ -1,5 +1,4 @@
-﻿using ASP;
-using Bookish.Models;
+﻿using Bookish.Models;
 using Bookish.Models.Users;
 using Dapper;
 using Microsoft.AspNetCore.Connections;
@@ -15,11 +14,10 @@ namespace Bookish.Controllers
         { 
             return View();
         }
-
-        [HttpPost("create")]
-        public IActionResult NewUser(UserModel newUser)
+        
+        public IActionResult NewUser()
         {
-            return NewUser()
+            return View();
         }
     }
 }
