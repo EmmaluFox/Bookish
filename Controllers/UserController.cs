@@ -1,4 +1,5 @@
-﻿using Bookish.Models;
+﻿using ASP;
+using Bookish.Models;
 using Bookish.Models.Users;
 using Dapper;
 using Microsoft.AspNetCore.Connections;
@@ -18,8 +19,7 @@ namespace Bookish.Controllers
         [HttpPost("create")]
         public IActionResult NewUser(UserModel newUser)
         {
-            
-          return RedirectToAction("UserView");
+            return NewUser()
         }
     }
 }
