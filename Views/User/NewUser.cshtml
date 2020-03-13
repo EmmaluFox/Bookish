@@ -1,0 +1,27 @@
+﻿@model Bookish.Models.Users.UserModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>title</h2>
+
+@{
+    Layout = "_Layout";
+
+}
+
+<h1>New Post</h1>
+<article class="container_create">
+    <form action="/User/NewUser" method="post">
+        <label for="FirstName">First Name:</label><br>
+        <input type="text" name="FirstName" id="FirstName"/><br/>
+        <label for="LastName">Last Name:</label><br>
+        <input type="text" name="LastName" id="LastName"/><br/>
+        <label for="imageUrl">Profile Image Url:</label><br/>
+        <input type="text" id="imageUrl" name="imageUrl" placeholder="Image Url..."/><br/>
+        <input type="submit" value="Submit">
+    </form>
+
+</article>

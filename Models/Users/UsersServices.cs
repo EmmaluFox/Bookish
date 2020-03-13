@@ -5,8 +5,9 @@ using MySql.Data.MySqlClient;
 
 namespace Bookish.Models.Users
 {
-    public class UserServices
+    public class UserServices : IDbServices
     {
+        private MySqlConnection connection = IDbServices.ConnectToDb();
         public class User
         {
             public int Id { get; set; }
@@ -18,13 +19,6 @@ namespace Bookish.Models.Users
         }
         public IEnumerable<User> GetUsers()
         {
-            var server = "localhost";
-            var database = "bookishdb";
-            var uid = "EmmFox";
-            var password = "Astrid2014";
-            string serverConnection = "Server=" + server + ";" + "Database=" + 
-                                      database + ";" + "Uid=" + uid + ";" + "Pwd=" + password + ";";
-            using MySqlConnection connection = new MySqlConnection(serverConnection);
             var users = connection.Query<User>
                 ("SELECT * FROM users");
             return users;
