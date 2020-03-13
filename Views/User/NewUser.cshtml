@@ -1,5 +1,5 @@
-﻿@model Bookish.Models.Users.UserModel
-
+﻿@using Bookish.Models.Users
+@model Bookish.Models.Users.UserModel
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
@@ -9,12 +9,12 @@
 
 @{
     Layout = "_Layout";
-
+UserServices newUser = new UserServices();
 }
 
-<h1>New Post</h1>
+<h1>New User</h1>
 <article class="container_create">
-    <form action="/User/NewUser" method="post">
+    <form action="@newUser.NewUser()" method="post">
         <label for="FirstName">First Name:</label><br>
         <input type="text" name="FirstName" id="FirstName"/><br/>
         <label for="LastName">Last Name:</label><br>

@@ -23,5 +23,11 @@ namespace Bookish.Models.Users
                 ("SELECT * FROM users");
             return users;
         }
+
+        public MySqlCommand NewUser()
+        {
+            return new MySqlCommand("INSERT INTO users (first_name, last_name, email, image_url) VALUES ('test', 'test', 'test@test.com', 'https://test.test?///test278846565=dyhgyg');");
+        }
+        
     }
 }
