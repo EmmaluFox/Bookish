@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using Bookish.Models.Copy;
 using Dapper;
+using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 
 namespace Bookish.Models.Users
 {
-    public class UserServices : IDbServices
+    public class UsersServices
     {
         private MySqlConnection connection = IDbServices.ConnectToDb();
         public class User
@@ -24,9 +25,12 @@ namespace Bookish.Models.Users
             return users;
         }
 
-        public MySqlCommand NewUser()
+        public void NewUser(UsersModel newUserModel)
         {
-            return new MySqlCommand("INSERT INTO users (first_name, last_name, email, image_url) VALUES ('test', 'test', 'test@test.com', 'https://test.test?///test278846565=dyhgyg');");
+           connection.Execute(
+                "INSERT INTO users (first_name, last_name, email, image_url) VALUES (@FirstName, @LastName, @Email, @ImageURL)",
+                new {FirstName = newUserModel.FirstName, LastName = newUserModel.LastName, Email = newUserModel.Email, ImageUrl = newUserModel.ImageUrl}
+            );
         }
         
     }

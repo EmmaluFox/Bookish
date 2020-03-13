@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Bookish.Models.Users;
 using Dapper;
 using Google.Protobuf.WellKnownTypes;
 using MySql.Data.MySqlClient;

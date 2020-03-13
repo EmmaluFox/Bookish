@@ -8,7 +8,7 @@ using MySql.Data.MySqlClient;
 namespace Bookish.Models.Copy
 {
     using Dapper;
-    public class CopyServices : IDbServices
+    public class CopyServices
     {
         private MySqlConnection connection = IDbServices.ConnectToDb();
         public class Copy

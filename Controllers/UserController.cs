@@ -19,5 +19,12 @@ namespace Bookish.Controllers
         {
             return View();
         }
+        
+        [HttpPost("create")]
+        public void CreateUser([FromForm] UsersModel newUserModel)
+        {
+            UsersServices newUserServices = new UsersServices();
+            newUserServices.NewUser(newUserModel);
+        }
     }
 }

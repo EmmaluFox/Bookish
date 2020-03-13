@@ -1,23 +1,33 @@
 ﻿@using Bookish.Models.Users
 @using Dapper;
-@model Bookish.Models.Users.UserModel
+@model Bookish.Models.Users.UsersModel;
 @{
+    ViewBag.Title = "Create a new User";
     Layout = "_Layout";
     DefaultTypeMap.MatchNamesWithUnderscores = true;
-    UserServices newUser = new UserServices();
 }
-@{
+
     <h1>New User</h1>
-    <article class="container_create">
-        <form action="@newUser.NewUser()" method="post">
-            <label for="FirstName">First Name:</label><br>
-            <input type="text" name="FirstName" id="FirstName"/><br/>
-            <label for="LastName">Last Name:</label><br>
-            <input type="text" name="LastName" id="LastName"/><br/>
-            <label for="imageUrl">Profile Image Url:</label><br/>
-            <input type="text" id="imageUrl" name="imageUrl" placeholder="Image Url..."/><br/>
-            <input type="submit" value="Submit">
-        </form>
-    </article>
-    
-}
+
+    <form asp-controller="User" asp-action="CreateUser" method="post">
+            <label asp-for="FirstName">First Name:</label><br>
+            <input asp-for="FirstName"/><br/>
+            <span asp-validation-for="FirstName"></span>
+            
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName"/>
+            <span asp-validation-for="LastName"></span>
+            
+            <label asp-for="Email"></label>
+            <input asp-for="Email"/>
+            <span asp-validation-for="Email"></span>
+            
+            <label asp-for="ImageUrl"></label>
+            <input asp-for="ImageUrl"/>
+            <span asp-validation-for="ImageUrl"></span>
+            
+            <button type="submit">Submit</button>
+            
+    </form>
+
+

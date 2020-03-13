@@ -11,7 +11,7 @@ namespace Bookish.Models.Author {
     {
         
         using Dapper;
-        public class AuthorServices : IDbServices
+        public class AuthorServices
         {
             private MySqlConnection connection = IDbServices.ConnectToDb();
             public class Author
