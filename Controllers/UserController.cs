@@ -1,7 +1,12 @@
-﻿namespace Bookish.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Bookish.Controllers
 {
-    public class UserController
+    public class UserController : Controller
     {
-        
+        public IActionResult UserView()
+        { 
+            return View();
+        }
     }
 }
