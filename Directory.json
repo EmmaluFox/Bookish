@@ -1,0 +1,288 @@
+﻿{
+  "__type": "UpdateItemJsonRequest:#Exchange",
+  "Header": {
+    "__type": "JsonRequestHeaders:#Exchange",
+    "RequestServerVersion": "V2018_01_08",
+    "TimeZoneContext": {
+      "__type": "TimeZoneContext:#Exchange",
+      "TimeZoneDefinition": {
+        "__type": "TimeZoneDefinitionType:#Exchange",
+        "Id": "GMT Standard Time"
+      }
+    }
+  },
+  "Body": {
+    "__type": "UpdateItemRequest:#Exchange",
+    "ItemChanges": [
+      {
+        "__type": "ItemChange:#Exchange",
+        "Updates": [
+          {
+            "__type": "SetItemField:#Exchange",
+            "Path": {
+              "__type": "PropertyUri:#Exchange",
+              "FieldURI": "ToRecipients"
+            },
+            "Item": {
+              "__type": "Message:#Exchange",
+              "ToRecipients": [
+                {
+                  "Name": "Aaron Gibbison",
+                  "EmailAddress": "Aaron.Gibbison@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Adam Smith",
+                  "EmailAddress": "Adam.Smith@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Aida Younesi",
+                  "EmailAddress": "Aida.Younesi@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Alan Reading",
+                  "EmailAddress": "Alan.Reading@diginius.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Ailish Taylor",
+                  "EmailAddress": "Ailish.Taylor@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Alex Karet",
+                  "EmailAddress": "Alex.Karet@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Alanna Gow",
+                  "EmailAddress": "Alanna.Gow@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Alexander Read",
+                  "EmailAddress": "Alexander.Read@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Alexander Jones",
+                  "EmailAddress": "Alexander.Jones@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Alex Powell",
+                  "EmailAddress": "Alex.Powell@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Alex Wolff",
+                  "EmailAddress": "Alex.Wolff@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Alexandra Burson",
+                  "EmailAddress": "ABurson@Softwire.onmicrosoft.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Alexandre Catto",
+                  "EmailAddress": "Alexandre.Catto@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Alexandru Catarau",
+                  "EmailAddress": "Alexandru.Catarau@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Alin Popa",
+                  "EmailAddress": "Alin.Popa@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Andrew Main",
+                  "EmailAddress": "Andrew.Main@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Andrew Thomas",
+                  "EmailAddress": "Andrew.Thomas@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Zoe Cunningham",
+                  "EmailAddress": "Zoe.Cunningham@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Yingxin Jiang",
+                  "EmailAddress": "Yingxin.Jiang@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Yemi Olagbaiye",
+                  "EmailAddress": "Yemi.Olagbaiye@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Yannis Toubakaris",
+                  "EmailAddress": "Yannis.Toubakaris@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "William Powell",
+                  "EmailAddress": "William.Powell@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Wiesje Heerik",
+                  "EmailAddress": "Wiesje.Heerik@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                },
+                {
+                  "Name": "Wai-wai Ng",
+                  "EmailAddress": "WaiWai.Ng@softwire.com",
+                  "RoutingType": "SMTP",
+                  "MailboxType": "Mailbox"
+                }
+              ]
+            }
+          },
+          {
+            "__type": "SetItemField:#Exchange",
+            "Path": {
+              "__type": "PropertyUri:#Exchange",
+              "FieldURI": "CcRecipients"
+            },
+            "Item": {
+              "__type": "Message:#Exchange",
+              "CcRecipients": []
+            }
+          },
+          {
+            "__type": "SetItemField:#Exchange",
+            "Path": {
+              "__type": "PropertyUri:#Exchange",
+              "FieldURI": "BccRecipients"
+            },
+            "Item": {
+              "__type": "Message:#Exchange",
+              "BccRecipients": []
+            }
+          },
+          {
+            "__type": "SetItemField:#Exchange",
+            "Path": {
+              "__type": "PropertyUri:#Exchange",
+              "FieldURI": "Subject"
+            },
+            "Item": {
+              "__type": "Message:#Exchange",
+              "Subject": ""
+            }
+          },
+          {
+            "__type": "SetItemField:#Exchange",
+            "Path": {
+              "__type": "PropertyUri:#Exchange",
+              "FieldURI": "Body"
+            },
+            "Item": {
+              "__type": "Message:#Exchange",
+              "Body": {
+                "__type": "BodyContentType:#Exchange",
+                "BodyType": "HTML",
+                "Value": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><style type=\"text/css\" style=\"display:none;\"> P {margin-top:0;margin-bottom:0;} </style></head><body dir=\"ltr\"><div style=\"font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);\"><br></div></body></html>",
+                "DataUriCount": 0
+              }
+            }
+          },
+          {
+            "__type": "SetItemField:#Exchange",
+            "Path": {
+              "__type": "PropertyUri:#Exchange",
+              "FieldURI": "Importance"
+            },
+            "Item": {
+              "__type": "Message:#Exchange",
+              "Importance": "Normal"
+            }
+          },
+          {
+            "__type": "SetItemField:#Exchange",
+            "Path": {
+              "__type": "PropertyUri:#Exchange",
+              "FieldURI": "IsReadReceiptRequested"
+            },
+            "Item": {
+              "__type": "Message:#Exchange",
+              "IsReadReceiptRequested": false
+            }
+          },
+          {
+            "__type": "SetItemField:#Exchange",
+            "Path": {
+              "__type": "PropertyUri:#Exchange",
+              "FieldURI": "IsDeliveryReceiptRequested"
+            },
+            "Item": {
+              "__type": "Message:#Exchange",
+              "IsDeliveryReceiptRequested": false
+            }
+          }
+        ],
+        "ItemId": {
+          "__type": "ItemId:#Exchange",
+          "Id": "AAMkAGUwYWQwZjFjLTI4Y2UtNGUyMy1hZTdhLWVlZjgxNDcwNzEwNgBGAAAAAAB1yAp/HXJdSpL1Go84NY44BwBtJ3qYOTtpSbFR4ZhprEVNAAAAAAEPAAB2+0KevLkiSra33+hQFoxOAAAc5KvuAAA=",
+          "ChangeKey": "CQAAABYAAAB2+0KevLkiSra33+hQFoxOAAAc2H+D"
+        }
+      }
+    ],
+    "ConflictResolution": "AlwaysOverwrite",
+    "ClientSupportsIrm": true,
+    "SendCalendarInvitationsOrCancellations": "SendToNone",
+    "MessageDisposition": "SaveOnly",
+    "SuppressReadReceipts": false,
+    "ComposeOperation": "newMail",
+    "PromoteInlineAttachments": false,
+    "SendOnNotFoundError": true,
+    "ItemShape": {
+      "__type": "ItemResponseShape:#Exchange",
+      "BaseShape": "IdOnly",
+      "AdditionalProperties": [
+        {
+          "__type": "PropertyUri:#Exchange",
+          "FieldURI": "ItemLastModifiedTime"
+        }
+      ]
+    },
+    "OutboundCharset": "AutoDetect",
+    "UseGB18030": false,
+    "UseISO885915": false
+  }
+}

@@ -1,15 +1,14 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-
+* {
+  border-style: unset;
+}
 img {
   min-width: unset;
   max-width: unset;
 }
 section {
-  border-style: ridge;
-  border-color: #17a2b8;
-  border-width: 3px;
-  width: 90vw;
+
 }
 
 .profile-image {

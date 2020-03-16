@@ -15,6 +15,7 @@
         <e p="HomeController.cs" t="Include" />
         <e p="UserController.cs" t="Include" />
       </e>
+      <e p="Directory.json" t="Include" />
       <e p="Models" t="Include">
         <e p="Author" t="Include">
           <e p="AuthorModel.cs" t="Include" />
